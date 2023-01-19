@@ -1,0 +1,491 @@
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('OpenSans-Regular.ttf') format('truetype');
+    
+}
+
+body{
+    margin: 0%;
+    padding: 0%; 
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+hr{
+    margin-top: 20px;
+}
+
+#navegacion{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.8);
+    text-align: center;
+    height: 49px;
+    padding: 7px 0px;
+    margin: 0 ;
+    font-size: 19px;
+}
+#fondo{
+    position: relative;
+background-image: url(../img/fondo3.jpg);    
+background-size: cover;
+background-position: 0px;
+margin: 0px;
+color: #FFFFFF;
+height: 550px;
+
+border-bottom: solid 1px #979797;
+}
+#Titulo{
+    float: left;
+    padding-left: 320px;
+    padding-top: 15px;
+    color: #ffffff;
+}
+#menu{
+    position: fixed;
+    width:100% ;
+    padding-top: 15px;
+    padding-left: 239px;
+    margin: auto;
+
+}
+
+#lista{
+    display: inline;
+    margin-bottom: 18px;
+    position: relative;
+}
+
+.boton{
+    margin-top: 429px;
+    margin-bottom: 19px;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 0px 20px;
+    padding-top: 20px;
+    padding-bottom: 17px;
+    cursor: pointer;
+    transition:  0.09s;
+    
+}
+
+.boton:hover{
+    background-color: rgba(0, 0, 0, 0.6);
+    border-bottom: solid 3px #ffffff;
+    color: #ffffff;
+   
+}
+
+.infoprincipal{
+    margin: auto;
+    padding: 129px;
+}
+
+#texto1{
+    display: flex;
+    position: relative;
+    top: 102px;
+    transition: all 1s;
+    animation: moveUp 1s ease-in-out infinite;
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    padding: 39px;
+}
+
+
+.boxreser{
+    background-color:rgba(0, 0, 0, 0.7)  ;
+    text-align: center;
+    margin: auto;
+    width: 12%;
+    padding: 12px;
+    border-radius: 4px;
+    position: relative;
+    bottom: 140px;
+    cursor: pointer;
+}
+
+.boxreser:hover{
+    
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.reserva{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cajainfo{
+    margin-top: 20px;
+    padding: 10px 300px;
+}
+
+.cajainfo p{
+    text-align: center;
+    margin: 0px;
+    
+}
+
+.redessociales{
+    margin: auto;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#facebook, #twiter, #instagram{
+ 
+    display: inline;
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+#facebook:hover, #twiter:hover, #instagram:hover{
+transform: scale(1.1);}
+
+.redes{
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+}
+
+.tituloinfo{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    text-align: center;
+    margin-bottom: 2px;
+    margin-top: 40px;
+
+}
+
+#bordeanima{
+    border-bottom: solid 5px black;
+    animation: expandir 1s, contraer 1s;
+    margin: auto;
+    width: 400px;
+    margin-bottom: 10px;
+    margin-top: 1px;
+}
+
+#bordeanima2{
+    border-bottom: solid 5px black;
+    animation: expandir 1s, contraer 1s;
+    margin: auto;
+    width: 600px;
+    margin-bottom: 30px;
+    margin-top: 1px;
+}
+
+
+#menuejecutivo{
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #5e5d5d
+}
+
+#platosdestacados{
+    margin-bottom: 80px ;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+}
+
+#cajasushi, #cajaramen, #cajaokonomiyaki, #cajayakiniku{
+border-radius: 4px;
+    background-color: #ffffff;
+    margin: auto;
+    margin-left: 50px;
+    width: 250px;
+    height: 400px;
+    transition: 0.4s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+    
+}
+
+#cajasushi:hover{
+    box-shadow: 1px 15px 8px rgba(0, 0, 0, 0.6);
+transform: scale(1.05);
+
+}
+
+#cajaramen:hover{
+    box-shadow: 1px 15px 8px rgba(0, 0, 0, 0.6);
+
+    transform: scale(1.05);
+}
+
+#cajaokonomiyaki:hover{
+    box-shadow: 1px 15px 8px rgba(0, 0, 0, 0.6);
+
+    transform: scale(1.05);
+}
+
+#cajayakiniku:hover{
+    box-shadow: 1px 15px 8px rgba(0, 0, 0, 0.6);
+
+    transform: scale(1.05);
+
+}
+
+#sushi, #ramen, #okonomiyaki, #yakiniku{
+
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    border-radius: 4px 4px 0px 0px;
+    
+}
+
+#sushiinfo, #rameninfo, #okonomiyakiinfo, #yakinikuinfo{
+    text-align: center;
+    margin: auto;
+}
+#sushiinfo p {
+    margin: auto;
+    font-size: 16px;
+    width: 150px;
+    height: 100px;
+}
+
+#sushiinfo h2{
+    margin-bottom: 11px;
+}
+
+#rameninfo p{
+    margin: auto;
+    font-size: 16px;
+    width: 160px;
+    height: 100px;
+}
+
+#rameninfo h2{
+    margin-bottom: 11px;
+}
+
+#okonomiyakiinfo p {
+    margin: auto;
+    font-size: 16px;
+    width: 170px;
+    height: 100px;
+}
+
+#okonomiyakiinfo h2{
+    margin-bottom: 11px;
+}
+
+#yakinikuinfo p {
+    margin: auto;
+    font-size: 16px;
+    width: 170px;
+    height: 100px;
+}
+
+#yakinikuinfo h2{
+    margin-bottom: 11px;
+}
+
+
+.tituloservicio{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-top: 4px;
+
+}
+
+#servicios{
+    margin: auto;
+}
+
+#cajaservicio{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    text-align: center;
+    font-size: 11px;
+    
+    color: #FFFFFF;
+}
+
+#info1, #info2, #info3{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 4px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.4);
+}
+
+#info1{
+    margin: auto;
+    width: 300px;
+    margin: 0 40px;
+    height: 300px;
+
+}
+#info2{
+    color: #FFFFFF;
+    
+    margin: auto;
+    width: 300px;
+    margin: 0 40px;
+    height: 350px;
+}
+#info3{color: #FFFFFF;
+  
+    margin: auto;
+    width: 300px;
+    margin: 0 40px;
+height:  300px;
+}
+
+#info1 h2, #info2 h2, #info3 h2{
+    margin-top: 50px;
+    margin-bottom: 0;
+    font-size: 25px;
+    text-align: center;
+font-family: 'Courier New', Courier, monospace;}
+
+#info1 p, #info2 p, #info3 p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    margin-top: 10px;
+    width: 220px;
+    height: 10px;
+    font-size: 19px;
+}
+#info2 h2{
+    margin-top: 60px;
+}
+
+#fondocaja{
+    margin: 0   ;
+    height: 50%;
+    width: 100%;
+}
+
+#fondopie{
+background-image: url(../img/ubicacion.jpg);
+background-size: cover;
+background-position:  0px;
+margin: auto;
+color: #FFFFFF;
+width: 48%;
+height: 500px;
+float: left;
+box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+transition: 0.3s;
+transform: scale(1.04);
+
+}
+
+#ubicainfo{
+    text-align: center;
+    float: right;
+    height: 500px;
+width: 50%;
+padding-right: 15px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#ubicainfo h2{
+    background-color: #080808;
+    display: inline-flex;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 150px;
+    font-size: 30px;
+}
+
+#ubicainfo p{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#fondocontacto{
+    background-image: url(../img/fondocontacto.jpg);
+    background-size: cover;
+    background-position:  0px;
+    margin: auto;
+    margin-top: 30px;
+    color: #FFFFFF;
+    width: 48%;
+    height: 500px;
+    float: right;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    transform: scale(1.04);
+    
+}
+#infocontacto{
+    text-align: center;
+    float: left;
+    height: 500px;
+width: 50%;
+padding-right: 15px;
+margin-top: 30px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+font-size: 20px;
+}
+
+#infocontacto h2{
+    color: #ffffff;
+margin-top: 90px;
+background-color: #080808;
+display: inline-flex;
+padding: 20px;
+border-radius: 4px;
+}
+
+#formulario{
+    font-size: 25px;
+    padding-right: 50px;
+    margin-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#nombre, #email, #mensaje{
+    border-radius: 4px;
+}
+
+#cajanombre{
+    display: inline-flex;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+#cajaemail{
+    display: inline-flex;
+    margin-bottom: 20px;
+
+}
+
+#cajamensaje{
+    display: inline-flex;
+}
+
+footer{
+    color: #FFFFFF;
+    background-color: #0e0e0e;
+    display: inline-flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 80px;
+}
